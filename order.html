@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@600;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Merienda:wght@600;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lemonada:wght@600&family=Merienda:wght@600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>NYPONE Bakery</title>
+        
+        
+
+    </head>
+
+    
+    <body>
+        <section class="home">
+            <nav>
+                <div class="logo">
+                    <a href="../index_submission_232594T/index.html">
+                        <img src="../index_submission_232594T/Images/logo.png" alt="logo">
+                    </a>
+                    
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li>
+                    <a href="order.html">Order</a>
+                    </li>
+                    <li>
+                        <a href="/aboutus.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="../joinus.html">Join Us</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <div class="big-order-container">
+                <div class="order-heading">
+                    <h1>Order</h1>
+                </div>
+
+                <hr class="order-line">
+    
+                <div class="order-form">
+                    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" class="order-form">
+                        <div class="food-item-dropdown">
+                            <label for="foodItem">Select Food Item:</label>
+                            <select id="foodItem" name="foodItem">
+                                <option value="" disabled selected>Select a food option</option>
+                
+                                <optgroup label="Pizza" class="pizza-option">
+                                    <option value="garlic-option">Classic Pizza - $5.00</option>
+                                    <option value="hawaiian-option">Haiwaiian Pizza -$7.45 </option>
+                                    <option value="bbq-option">BBQ Chicken Pizza - $8.50</option>
+                                    <option value="beef-option">Beef & Bell Pepper - $10.00</option>
+                                    <option value="nachos-option">Nachos Popcorn Chicken Pizza - $8.00</option>
+                                    <option value="turkey-option">Turkey Pizza - $11.00</option>
+                                    </optgroup>
+                                
+                                <optgroup label="Buns">
+                                    <option value="garlic-bun-option">Garlic Butter Bun - $2.50</option>
+                                    <option value="sugar-cheese-bun-option">Sugar Cheese Bun - $3.00</option>
+                                    <option value="chicken-bun-option">Chicken Sausage Bun - $3.50</option>
+                                    <option value="cheddar-sun-dried-option">Cheddar and Sun Dried Tomato Bun - $3.00</option>
+                                    <option value="ham-cheese-bun-option">Ham & Cheese Bun - $4.00</option>
+                                    <option value="chocolate-bun-option">Double Chocolatte Donut Bun - $2.30</option>
+                                    </optgroup>
+                                <optgroup label="Cookie">
+                                    <option value="matcha-ccokies-option">Matcha Cookies[Box of 10] - $15.00 </option>
+                                    <option value="butter-cookies-options">Butter Cookies[Box of 10] - $13.50</option>
+                                    <option value="chocolate-cookies-options">Chocolate Cookies[Box of 10] - $15.50</option>
+                                    </optgroup>
+                                <optgroup label="Muffin">
+                                    <option value="apple-crumble-muffin-option">Apple Crumble Muffin - $3.00</option>
+                                    <option value="strawberry-muffin-option">Strawberry Crumble Muffin - $3.50</option>
+                                    <option value="blueberry-muffin-option">Blueberry Crumble Muffin - $4.40</option>
+                                    <option value="banana-muffin-option">Banana Walnut Muffin - $4.00</option>
+                                    <option value="double-choco-muffin-option">Double Chocolate Almond Muffin - $5.50</option>
+                                    <option value="chocolate-banana-option">Chocolate Banana Muffin - $4.50</option>
+                                    </optgroup>
+                            </select>
+                
+                        </div>
+                        
+                
+                        <div class="quantity-input">
+                            <label for="Quantity" name="Quantity">Quantity</label>
+                            <input type="number" for="quantity-item" id="quantity-item" min="1" value="0" required placeholder="Type Quantity" name="Quantity">
+                
+                        </div>
+                
+                        <div class="special-request-input">
+                            <label for="special-request" name="Special Request:">Special Requests:</label>
+                            <textarea name="special-request" id="special-request" rows="4" placeholder="e.g- No Tomatoes"></textarea>
+                        </div>
+        
+                        <div class="submit-button">
+                            <button type="submit">Submit Order</button>
+        
+                        </div>
+                       
+                    </form>
+    
+                </div>
+            </div>
+
+
+
+            
+
+        </section>
+    </body>
+
+</html>

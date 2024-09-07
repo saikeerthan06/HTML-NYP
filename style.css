@@ -1,0 +1,1547 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 1024px;
+    
+}
+
+
+nav{
+    background-color: #aad9cd ; 
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    height: 10vh;
+    color: orange;
+}
+
+.logo{
+    margin-left: 18px;
+}
+
+nav ul {
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    margin-left: 400px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+}
+
+
+
+
+.home-image img {
+    margin-top: 70px;
+    transform: scale(0.8);
+    
+}
+
+.home-image {
+    margin-bottom: 20px;
+}
+
+.haven {
+    color: teal;
+    margin-left: -20px;
+    font-size: 2.5vh;
+    font-style: italic;
+    font-family: Merienda;
+}
+
+.NYPONE {
+    text-align: justify;
+    font-size: 4vh;
+    font-family: comfortaa;
+    font-weight: bolder;
+    margin-top: 23px;
+    /* align-items: center; */
+}
+
+.top-text {
+    text-align: center;
+    margin: 30px;
+    margin-top: 50px; 
+    
+}
+
+.main-text p {
+    font-size: 1.8vh;
+    text-align: center;
+}
+
+.index-buttons {
+    display: flex;
+    justify-content:space-evenly;
+    margin-left: 110px;
+}
+
+
+.order-button button {
+    margin-left: 20px;
+    /* margin-right: 20px; */
+    /* margin-right:100px; */
+    margin-top: 50px;
+    transform: scale(1.45);
+    background-color:#eec4dc ;
+    padding: 15px 30px;
+    font-size:18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-button button:hover {
+    background: #aad9cd;
+}
+
+.order-button {
+    margin-left: 400px;
+    /* margin-bottom: -200px; */
+}
+
+.menu-button button {
+    margin-left: -690px;
+    margin-right: 300px;
+    margin-top: 50px;
+    transform: scale(1.45);
+    background-color: #3498db;
+    
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.menu-button button:hover {
+    background: #f39c12;
+    /* background: #2980b9; */
+    text-decoration: none;
+}
+
+.menu-button {
+    margin-left: 250px;
+    margin-top: 0%;
+    text-decoration: none;
+}
+
+.menu-button a{
+    text-decoration: none;
+}
+
+.order-button a {
+    text-decoration: none;
+}
+
+
+.promotions h1{
+    margin-top: 300px;
+    /* margin-left: 350px; */
+    font-size:3em;
+    font-family: Lemonada;
+    color: black;
+    background-color: #aad9cd;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.promotions {
+    margin-top: -270px;
+}
+
+.right-image img {
+    width: 70%;
+    /* transform: scale(1.5); */
+    
+    
+
+}
+
+
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    margin-top: 30px;
+    
+}
+
+.pizza-offer img,
+.cookie-offer img,
+.bakery-promotion3 img {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+
+.pizza-offer:hover,
+.cookie-offer img:hover,
+.bakery-promotion3:hover img{
+    transform: scale(1.05);
+}
+    
+
+.promotion3 {
+    width: 35%;
+    height: auto;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #aad9cd;
+    font-size: 18px;
+    border-top: 2px solid #aad9cd;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* MENU PAGE */
+
+.menu-text h1{
+    font-family: Lemonada;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 2.35em;
+    color: teal;
+    margin-bottom: 0;
+}
+
+
+.pizza-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: 10px solid #fdd779;
+    border-style: double;
+    border-radius: 20px;
+    height: 40vh;
+    background-color: #fdd779; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+
+.pizza-menu img {
+    width: 35%;
+    order: 2;
+    margin-bottom: 0;
+    /* margin-left: 700px */
+}
+    
+
+.pizza-menu p {
+    flex: 1;
+    order: 1;
+    text-align: justify;
+    margin-bottom: 20px;
+
+
+}
+
+/* .menu button {
+    margin-top:auto;
+    cursor: pointer;
+    
+} */
+
+.explore-pizza-button {
+    display: block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #d39c6c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 17vh;
+    margin-right: 150px;
+}
+
+.explore-pizza-button a {
+    text-decoration: none;
+    font-family: josefin sans;
+    font-size: larger;
+    color: black;
+    
+}
+
+.explore-pizza-button:hover {
+    background-color: #d2b48c;
+    text-decoration: none; 
+} 
+
+.pizza-info{
+    padding-left: 50px;
+
+}
+
+.bun-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    border: 10px solid #eec4dc;
+    border-style: double;
+    height: 40vh;
+    background-color: #eec4dc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+.bun-menu img {
+    width: 35%;
+    /* margin-top: -100px; */
+    order: 1;
+    margin-bottom: 0;
+    
+}
+
+.bun-menu p {
+    flex: 1;
+    order: 2;
+    text-align: justify;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.explore-bun-button {
+    display: block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #d39c6c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 17vh;
+}
+
+.explore-bun-button:hover {
+    background-color: #d2b48c;
+    text-decoration: none;
+}
+
+.explore-bun-button a {
+    text-decoration: none;
+    font-family: josefin sans;
+    font-size: larger;
+    color: black;
+}
+
+.bun-info {
+    padding-left: 50px;;
+}
+
+.cookie-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: 10px solid #aad9cd;
+    border-style: double;
+    border-radius: 20px;
+    height: 40vh;
+    background-color: #aad9cd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+.cookie-menu p{
+    flex: 1;
+    order: 1;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.cookie-menu img {
+    width: 35%;
+    order: 2;
+    margin-bottom: 0;
+    /* margin-left: 700px; */
+}
+
+.explore-cookie-button {
+    display: block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #d39c6c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 17vh;
+    margin-right: 150px;
+}
+
+.explore-cookie-button:hover {
+    background-color: #d2b48c;
+    text-decoration: none;
+}
+
+.explore-cookie-button a {
+    text-decoration: none;
+    font-family: josefin sans;
+    font-size: larger;
+    color: black
+}
+
+.cookie-pictures {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.matcha-cookies img,
+.butter-cookies img,
+.chocolate-cookies img {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transform: scale(0.9);
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: filter 0.5s ease;
+}
+
+
+
+.chocolate-cookies:hover img,
+.matcha-cookies:hover img,
+.butter-cookies:hover img {
+    filter: blur(10px);
+}
+
+.blurred-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-size: 48px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+}
+.blurred-text p{
+    transform: scale(0.5);
+    width:fit-content;
+    margin-bottom: 20px;
+    color: white;
+    /* text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
+}
+
+.chocolate-cookies:hover .blurred-text,
+.butter-cookies:hover .blurred-text,
+.matcha-cookies:hover .blurred-text {
+    opacity: 1;
+}
+.chocolate-cookies,
+.butter-cookies,
+.matcha-cookies {
+    position: relative;
+    display: inline-block;
+}
+
+.cookie-pictures img:hover,
+.matcha-cookies img:hover,
+.butter-cookies img:hover {
+    transform: scale(1.0);
+    transition: transform 0.3s ease-in-out
+}
+
+.cookie-pictures .blurred-text p {
+    color: white;
+    text-align: left;
+    width: 150%;
+}
+
+.further-cookie-menu {
+    border: 3px solid rgb(93, 92, 92);
+    border-radius: 30px;
+    background: #aad9cd;
+    margin-top: 30px;
+}
+
+.cookie-pictures p {
+    color: black;
+    font-family: josefin sans;
+    align-items: center;
+    text-align: center;
+}
+
+.order-cookie-button {
+    margin-left: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.order-cookie-button a {
+    text-decoration: none;
+    font-family: josefin sans;
+    font-size: larger;
+    color: black;
+}
+
+.order-cookie-button button:hover {
+    background: lightsalmon;
+}
+
+.order-cookie-button button {
+    margin-left: 20px;
+    margin-top: 50px;
+    transform: scale(1.2);
+    background-color: #d39c6c;
+    padding: 15px 30px;
+    font-size:18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.further-menu h2 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.further-menu h3 {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.vanilla-pizza img {
+    width: 35%;
+    
+}
+
+.pizza-pictures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    margin-top: 30px; 
+}
+.garlic-cheese-pizza img,
+.haiwaiian-pizza img,
+.bbq-chicken img,
+.beef-pizza img,
+.nacho-pizza img,
+.turkey-pizza img {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.pizza-pictures img:hover {
+    transform: scale(1.0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.further-pizza-menu {
+    border: 3px solid rgb(93, 92, 92);
+    border-radius: 30px;
+    /* background: #f0a68e; */
+    background: #fdd779
+}
+
+#pizza-menu h2 {
+    margin-bottom: 20px;
+}
+
+.order-pizza-button {
+    margin-left: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.order-pizza-button button {
+    margin-left: 20px;
+    margin-top: 50px;
+    transform: scale(1.2);
+    background-color: #d39c6c;
+    padding: 15px 30px;
+    font-size:18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.order-pizza-button button:hover {
+    background: lightsalmon;
+}
+
+.order-pizza-button a {
+    text-decoration: none;
+    font-family: josefin sans;
+    font-size: larger;
+    color: black;
+}
+
+.pizza-pictures img {
+    transform: scale(0.9);
+}
+
+.pizza-pictures p {
+    color: black;
+    font-family: josefin sans;
+    align-items: center;
+    text-align: center;
+}
+
+.below-button  {
+    font-family: josefin sans;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 1.3em;
+}
+
+.h2-pizza h2{
+    font-size: 10em;
+    font-family: josefin sans;
+}
+
+.cupcake-pictures small {
+    text-align: center;
+    align-items: center;
+}
+
+.classic-bun-pictures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    margin-top: 30px;
+}
+
+.classic-bun-pictures img {
+    transform: scale(0.9);
+}
+
+.classic-bun-pictures img:hover {
+    transform: scale(1.0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.classic-bun-pictures p {
+    color: black;
+    font-family: josefin sans;
+    align-items: center;
+    text-align: center;
+}
+
+.further-bun-menu {
+    border: 3px solid rgb(93, 92, 92);
+    border-radius: 30px;
+    background: #eec4dc;
+    margin-top: 30px;
+}
+
+.order-bun-button {
+    margin-left: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.order-bun-button button {
+    margin-left: 20px;
+    margin-top: 50px;
+    transform: scale(1.2);
+    background-color: #d39c6c;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.order-bun-button button:hover {
+    background: lightskyblue;
+}
+
+.order-bun-button a {
+    text-decoration: none;
+    font-family: josefin sans;
+    font-size: larger;
+    color: black;
+}
+
+.h2-bun h2 {
+    font-size: 10em;
+    font-family: josefin sans;
+}
+
+.garlic-butter-bun img,
+.sugar-cheese-bun img,
+.chicken-bun img,
+.cheddar-sun-dried img,
+.ham-cheese-bun img,
+.chocolate-bun img {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+
+
+.muffin-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    border: 10px solid #dbcdf0;
+    border-style: double;
+    border-radius: 20px;
+    height: 40vh;
+    background-color:#dbcdf0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+
+.muffin-menu p {
+    flex: 1;
+    order: 2;
+    text-align: justify;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.muffin-menu img {
+    width: 28%;
+    order: 1;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.explore-muffin-button {
+    display: block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color:#d39c6c;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 17vh;
+}
+
+
+
+.explore-muffin-button:hover {
+    background-color: #d2b48c;
+    text-decoration: none;
+}
+
+.explore-muffin-button a {
+    text-decoration: none;
+    font-family: josefin sans;
+    font-size: larger;
+    color: black;
+}
+
+.muffin-info {
+    padding: 50px;
+}
+
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.reviews-heading {
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews-heading h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    background-color: #aad9cd;
+    color: black;
+    padding: 10px 20px;    
+    border: 3px solid #aad9cd;
+    border-radius: 30px;
+}
+
+.reviews-heading span {
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.review-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    width:100%;
+    flex-wrap: wrap;
+}
+
+.review1,
+.review2,
+.review3,
+.review4 {
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+    border-radius:25px;
+    border-color: #fdd779;
+    border-width: 7px;
+    border-style: double;
+    background-color: rgb(251, 242, 227);
+    padding: 20px;
+    cursor: pointer;
+    margin: 15px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.review1:hover,
+.review2:hover,
+.review3:hover,
+.review4:hover {
+    transform: scale(1.1);
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
+}
+
+.pfp {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+}
+
+.pfp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.profile1 {
+    align-items: center;
+    display: flex;  
+}
+
+.review-name {
+    flex-direction: column;
+    display: flex;
+    margin-left: 15px;
+    transform: scale(1.3);
+}
+
+.review-name strong {
+    font-size: 1.1rem;
+    color: teal;
+    letter-spacing: 0.5px;
+}
+
+.stars {
+    color: rgb(165, 58, 108);
+    margin-right: 30px;
+    transform: scale(1.5)
+}
+
+.box-header {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+
+}
+
+.box-footer p{
+    color: rgb(48, 48, 48);
+    font-style: italic;
+}
+
+.order-text h1 {
+    font-family: Lemonada;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 2.35em;
+    color: teal;
+    margin-bottom: 0;
+}
+
+
+.muffin-pictures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.muffin-pictures img {
+    transform: scale(0.9);
+}
+
+.muffin-pictures img:hover {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.muffin-pictures p {
+    color: black;
+    font-family: josefin sans;
+    align-items: center;
+    text-align: center;
+}
+
+.further-muffin-menu {
+    border: 3px solid rgb(93, 92, 92);
+    border-radius: 30px;
+    background: #dbcdf0;
+    margin-top: 30px;
+}
+
+.order-muffin-button {
+    margin-left: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.order-muffin-button button {
+    margin-left: 20px;
+    margin-top: 50px;
+    transform: scale(1.2);
+    background-color: #3498db;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.order-muffin-button a {
+    text-decoration: none;
+    font-family: josefin sans;
+    font-size: larger;
+    color: black;
+}
+
+.order-muffin-button button:hover {
+    background: #9b59b6;
+}
+
+
+.muffin-pictures .blurred-text p {
+    color: white;
+    text-align: left;
+    width: 150%;
+}
+
+.apple-crumble-muffin img,
+.strawberry-muffin img,
+.blueberry-muffin img,
+.banana-muffin img,
+.double-choco-muffin img,
+.chocolate-banana img {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transform: scale(0.9);
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: filter 0.5s ease
+}
+
+.apple-crumble-muffin:hover .blurred-text,
+.strawberry-muffin:hover .blurred-text,
+.blueberry-muffin:hover .blurred-text,
+.banana-muffin:hover .blurred-text,
+.double-choco-muffin:hover .blurred-text,
+.chocolate-banana:hover .blurred-text {
+    opacity: 1;
+}
+
+.apple-crumble-muffin:hover img,
+.strawberry-muffin:hover img,
+.blueberry-muffin:hover img,
+.banana-muffin:hover img,
+.double-choco-muffin:hover img,
+.chocolate-banana:hover img {
+    filter:blur(10px);
+}
+
+.apple-crumble-muffin img:hover,
+.strawberry-muffin img:hover,
+.blueberry-muffin img:hover,
+.banana-muffin img:hover,
+.double-choco-muffin img:hover,
+.chocolate-banana img:hover {
+    transform: scale(1.0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.apple-crumble-muffin,
+.strawberry-muffin,
+.blueberry-muffin,
+.banana-muffin,
+.double-choco-muffin,
+.chocolate-banana {
+    position: relative;
+    display: inline-block;
+}
+
+.order-form {
+    margin-top: 40px;
+
+}
+
+
+form {
+    height: auto;
+    width: 45%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 45px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #FFD770;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: teal;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+.submit-button {
+    align-items: center
+}
+
+ /* Order Form CSS: */
+.order-heading h1 {
+    font-family: Lemonada;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 2.35em;
+    color: teal;
+    margin-bottom: 0;
+}
+
+
+
+.go-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #000;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 12px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    /* color: #fff; */
+    background-color: #3498db;
+    padding: 12px;
+    margin-right: 460px;
+
+}
+
+.go-to-top-button a {
+    text-decoration: none;
+    
+}
+
+
+/* #backToTop:hover {
+    background-color: #ddd;
+    color: #333;
+    opacity: 1;
+    background-color: #2980b9;
+} */
+
+#backToTop a {
+    text-decoration: none;
+
+}
+
+/* word on pizza CSS: */
+
+.pizza-pictures .blurred-text p {
+    color: white;
+    text-align: left;
+    width: 150%;
+}
+
+.garlic-cheese-pizza img,
+.haiwaiian-pizza img,
+.bbq-chicken img,
+.beef-pizza img,
+.nacho-pizza img,
+.turkey-pizza img {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transform: scale(0.9);
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: filter 0.5s ease
+}
+
+.garlic-cheese-pizza:hover .blurred-text,
+.haiwaiian-pizza:hover .blurred-text,
+.bbq-chicken:hover .blurred-text,
+.beef-pizza:hover .blurred-text,
+.nacho-pizza:hover .blurred-text,
+.turkey-pizza:hover .blurred-text {
+    opacity: 1;
+}
+
+.garlic-cheese-pizza:hover img,
+.haiwaiian-pizza:hover img,
+.bbq-chicken:hover img,
+.beef-pizza:hover img,
+.nacho-pizza:hover img,
+.turkey-pizza:hover img {
+    filter: blur(10px);
+}
+
+.garlic-cheese-pizza img:hover,
+.haiwaiian-pizza img:hover,
+.bbq-chicken img:hover,
+.beef-pizza img:hover,
+.nacho-pizza img:hover,
+.turkey-pizza img:hover {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.garlic-cheese-pizza,
+.haiwaiian-pizza,
+.bbq-chicken,
+.beef-pizza,
+.nacho-pizza,
+.turkey-pizza {
+    position: relative;
+    display: inline-block;
+}
+
+/* CSS for blurred bun text */
+
+.classic-bun-pictures .blurred-text p {
+    color: white;
+    text-align: left;
+    width: 150%;
+}
+
+.garlic-butter-bun img,
+.sugar-cheese-bun img,
+.chicken-bun img,
+.cheddar-sun-dried img,
+.ham-cheese-bun img,
+.chocolate-bun img {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: filter 0.5s ease;
+}
+
+.garlic-butter-bun:hover .blurred-text,
+.sugar-cheese-bun:hover .blurred-text,
+.chicken-bun:hover .blurred-text,
+.cheddar-sun-dried:hover .blurred-text,
+.ham-cheese-bun:hover .blurred-text,
+.chocolate-bun:hover .blurred-text {
+    opacity: 1;
+}
+
+.garlic-butter-bun:hover img,
+.sugar-cheese-bun:hover img,
+.chicken-bun:hover img,
+.cheddar-sun-dried:hover img,
+.ham-cheese-bun:hover img,
+.chocolate-bun:hover img {
+    filter: blur(10px);
+}
+
+.garlic-butter-bun img:hover,
+.sugar-cheese-bun img:hover,
+.chicken-bun img:hover,
+.cheddar-sun-dried img:hover,
+.ham-cheese-bun img:hover,
+.chocolate-bun img:hover {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.garlic-butter-bun,
+.sugar-cheese-bun,
+.chicken-bun,
+.cheddar-sun-dried,
+.chocolate-bun,
+.ham-cheese-bun {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* About Us Page CSS: */
+
+.joinus-main h1 {
+    color: teal;
+    text-align: center;
+    font-size: 2.0em;
+    font-family: lemonada;
+    margin-top: 30px;
+}
+
+.joinus-container img {
+    transform: scale(2.3);
+    margin-top: 190px;
+    margin-left: 290px;
+}
+
+.joinus-main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.joinus-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.joinus-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.joinus-container:hover .joinus-image {
+    opacity: 0.7;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.joinus-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.joinus-image {
+    transform: scale(3)
+    
+}
+
+.staff-heading {
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.staff-heading h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    background-color: #aad9cd;
+    color: black;
+    padding: 10px 20px;
+    border: 3px #aad9cd;
+    border-radius: 30px;
+}
+
+.staff-heading span {
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.chef-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.chef1 img,
+.chef2 img,
+.chef3 img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #fff;
+    transform: scale(1.4);
+    display: block;
+    margin: 0 auto;
+}
+
+.chef1 p,
+.chef2 p,
+.chef3 p {
+    border-bottom: 5px solid teal; 
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    transform: scale(1.4)
+}
+.chef1,
+.chef2,
+.chef3 {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.chef2 p {
+    margin-left: 20px;
+}
+
+.chef3 p {
+    margin-left: 20px;
+}
+
+.chef1 p {
+    margin-left: 20px;
+}
+
+    
+.chef-box {
+    box-sizing: border-box;
+    margin-top: 80px;
+    border: 3px solid #aad9cd;
+    transform: scale(1.2);
+    border-radius: 30px;
+    padding: 10px 20px;
+    /* background: linear-gradient(#aad9cd, #FFD770); */
+    background:linear-gradient(to right, #aad9cd, #e4a648 );
+    height: 200px;
+    overflow: hidden;
+    width: 1000px;
+    
+}
+
+.chef-description p {
+    display: flex;
+    font-family: ubuntu;
+    line-height: 1.6;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.address-section {
+    margin-top: 90px;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0;
+    
+}
+
+.address-section h1 {
+    font-family: Ubuntu;
+    font-weight: bold;
+    color: black;
+    border: 3px solid #aad9cd;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: #aad9cd;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.address-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-style: double;
+    border-radius: 20px;
+    background-color: orange;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    height: 40vh;
+    border: 10px solid orange;
+    margin-top: 70px;
+}
+
+.address-content img {
+    width: 47%;
+    order: 2;
+    margin-bottom: 0;
+    margin-right: 400px;
+}
+
+.address-content p {
+    flex: 1;
+    order: 1;
+    /* text-align: justify; */
+    margin-right: 90px;
+    
+}
+
+.address-map {
+    display:flex;
+}
+
+
+
+.address-image img {
+    transform: scale(0.55);
+    align-items: left;
+}
+
+.social-media-container {
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'lemonada', sans-serif;
+}
+
+.social-media-container h1 {
+    color: teal;
+    font-size: 2em;
+    font-family: lemonada;
+    font-size: 2em;
+}
+
+.social-media-pictures {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.instagram, .phone {
+    background-color: orange;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.instagram img {
+    transform: scale(0.8);
+    align-items: center;
+}
+
+.phone img {
+    transform: scale(0.4);
+}
